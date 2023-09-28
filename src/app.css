@@ -1,0 +1,27 @@
+.dark-primary {
+  background-color: #212529;
+  transition: 1s;
+  --bs-emphasis-color-rgb: 255, 255, 255;
+}
+
+.dark-secondary {
+  background-color: #2f3337;
+  transition: 1s;
+  --bs-emphasis-color-rgb: 255, 255, 255;
+}
+
+.light-primary {
+  background-color: #ffffff;
+  transition: 1s;
+  --bs-emphasis-color-rgb: 0, 0, 0;
+}
+
+.light-secondary {
+  background-color: #eeeeee;
+  transition: 1s;
+  --bs-emphasis-color-rgb: 0, 0, 0;
+}
+
+.image-fade {
+  transition: 1s;
+}
