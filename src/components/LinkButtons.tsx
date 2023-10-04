@@ -1,11 +1,10 @@
 interface Props {
   lightMode: "light" | "dark";
-  links: { name: string; link: string; icon?: JSX.Element }[];
+  links: { name: string; link: string; icon?: JSX.Element; id?: string }[];
   divWidthPercent: number;
   minWidth: string;
   maxWidth?: string;
   buttonClass?: string; // Optional classes to add to the buttons
-  buttonId?: string; // Optional id to add to the buttons -- best used with only one button
   divClass?: string; // Optional classes to add to the div surrounding the buttons
 }
 
@@ -16,7 +15,6 @@ function LinkButtons({
   minWidth,
   maxWidth,
   buttonClass,
-  buttonId,
   divClass,
 }: Props) {
   const divSize = divWidthPercent / links.length; // value is in %
@@ -26,7 +24,7 @@ function LinkButtons({
 
   return (
     <>
-      {links.map(({ link, name, icon }) => {
+      {links.map(({ link, name, icon, id }) => {
         return (
           <div
             className={"col " + divClass}
@@ -38,7 +36,7 @@ function LinkButtons({
               marginTop: divMarginSize + "%",
               marginBottom: divMarginSize + "%",
             }}
-            id={buttonId}
+            id={id}
           >
             <a
               target="_blank"

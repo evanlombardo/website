@@ -21,7 +21,13 @@ interface Props {
 }
 
 function Projects({ lightMode }: Props) {
-  const descriptions = [
+  const descriptions: {
+    heading: string;
+    headingDescription?: string;
+    subheading?: string;
+    description: string | string[];
+    footing?: JSX.Element;
+  }[] = [
     {
       heading: "BigHouse",
       subheading: "Aug. 2023 - Current",
@@ -98,6 +104,7 @@ function Projects({ lightMode }: Props) {
                 name: "View on GitHub",
                 link: "https://github.com/evanlombardo/website",
                 icon: <GitHubLogo lightMode={lightMode} />,
+                id: "github",
               },
             ]}
             divWidthPercent={2.386 * 0.75}
@@ -142,6 +149,7 @@ function Projects({ lightMode }: Props) {
                 name: "View on GitHub",
                 link: "https://github.com/evanlombardo/Collager",
                 icon: <GitHubLogo lightMode={lightMode} />,
+                id: "github",
               },
             ]}
             divWidthPercent={2.386 * 0.75}
@@ -179,12 +187,12 @@ function Projects({ lightMode }: Props) {
                 name: "Watch Demo",
                 link: "https://www.youtube.com/watch?v=TcR_4IEbmYI",
                 icon: <YouTubeLogo lightMode={lightMode} />,
+                id: "youtube",
               },
             ]}
             divWidthPercent={2.386 * 0.75}
             minWidth="36px"
             buttonClass="m-0 py-0 icon-div align-icon"
-            buttonId="youtube"
             divClass="my-0 fit-content"
           />
           <div
@@ -221,6 +229,7 @@ function Projects({ lightMode }: Props) {
                 name: "View on GitHub",
                 link: "https://github.com/evanlombardo/TicTacToeAI",
                 icon: <GitHubLogo lightMode={lightMode} />,
+                id: "github",
               },
             ]}
             divWidthPercent={2.386 * 0.75}

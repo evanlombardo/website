@@ -13,7 +13,13 @@ interface Props {
 }
 
 function Experience({ lightMode }: Props) {
-  const descriptions = [
+  const descriptions: {
+    heading: string;
+    headingDescription?: string;
+    subheading?: string;
+    description: string | string[];
+    footing?: JSX.Element;
+  }[] = [
     {
       heading: "Lockheed Martin",
       headingDescription:

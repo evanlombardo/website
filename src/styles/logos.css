@@ -161,3 +161,23 @@
   fill: #00549d !important;
   transition: 0.3s ease-in-out !important;
 }
+
+#linkedin:hover > a > svg > path {
+  fill: #2867b2 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#clipboard:hover > a > svg > path {
+  fill: #0e9223 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#email:hover > a > svg > path {
+  fill: #d7a820 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#github:hover > a > svg > path {
+  fill: #ef4136 !important;
+  transition: 0.3s ease-in-out !important;
+}

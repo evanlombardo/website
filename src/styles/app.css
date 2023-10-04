@@ -104,6 +104,10 @@
   transition: 1s;
 }
 
+.icon-div-height-2 {
+  height: calc(var(--icon-height) * 1.5) !important;
+}
+
 .icon-div {
   height: calc(var(--icon-height) * 1.25) !important;
   width: fit-content !important;

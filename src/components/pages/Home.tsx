@@ -1,19 +1,45 @@
 import "../../styles/home.css";
 import LinkButtons from "../LinkButtons";
+import ClipboardLogo from "../logos/ClipboardLogo";
+import EmailLogo from "../logos/EmailLogo";
+import GitHubLogo from "../logos/GitHubLogo";
+import LinkedInLogo from "../logos/LinkedInLogo";
 
 interface Props {
   lightMode: "light" | "dark";
 }
 
 function Home({ lightMode }: Props) {
-  const links: { name: string; link: string }[] = [
-    { name: "GitHub", link: "https://github.com/evanlombardo" },
-    { name: "LinkedIn", link: "https://www.linkedin.com/in/evan-lombardo/" },
+  const links: {
+    name: string;
+    link: string;
+    icon?: JSX.Element;
+    id?: string;
+  }[] = [
+    {
+      name: "GitHub",
+      link: "https://github.com/evanlombardo",
+      icon: <GitHubLogo lightMode={lightMode} />,
+      id: "github",
+    },
+    {
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/evan-lombardo/",
+      icon: <LinkedInLogo lightMode={lightMode} />,
+      id: "linkedin",
+    },
     {
       name: "Resume",
       link: "https://drive.google.com/file/d/1lohOpKv5HTUjp4XXUygA0BbDY0psJhhc/view?usp=share_link",
+      icon: <ClipboardLogo lightMode={lightMode} />,
+      id: "clipboard",
     },
-    { name: "Email", link: "mailto:evan.lombardo04@gmail.com" },
+    {
+      name: "Email",
+      link: "mailto:evan.lombardo04@gmail.com",
+      icon: <EmailLogo lightMode={lightMode} />,
+      id: "email",
+    },
   ];
 
   return (
@@ -51,6 +77,7 @@ function Home({ lightMode }: Props) {
             links={links}
             divWidthPercent={75.0}
             minWidth="150px"
+            buttonClass="m-0 py-0 icon-div-height-2 align-icon"
           />
         </div>
       </div>
