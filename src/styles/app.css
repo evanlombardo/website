@@ -1,0 +1,167 @@
+.dark-primary {
+  background-color: #212529 !important;
+  transition: 1s !important;
+  --bs-emphasis-color-rgb: 255, 255, 255 !important;
+  color: rgba(var(--bs-emphasis-color-rgb), 0.8) !important;
+  font-family: "Ubuntu", sans-serif !important;
+  font-weight: 300 !important;
+}
+
+.dark-secondary {
+  background-color: #2f3337 !important;
+  transition: 1s !important;
+  --bs-emphasis-color-rgb: 255, 255, 255 !important;
+  color: rgba(var(--bs-emphasis-color-rgb), 0.8) !important;
+  font-family: "Ubuntu", sans-serif !important;
+  font-weight: 300 !important;
+}
+
+.light-primary {
+  background-color: #ffffff !important;
+  transition: 1s !important;
+  --bs-emphasis-color-rgb: 0, 0, 0 !important;
+  color: rgba(var(--bs-emphasis-color-rgb), 0.8) !important;
+  font-family: "Ubuntu", sans-serif !important;
+  font-weight: 300 !important;
+}
+
+.light-secondary {
+  background-color: #eeeeee !important;
+  transition: 1s !important;
+  --bs-emphasis-color-rgb: 0, 0, 0 !important;
+  color: rgba(var(--bs-emphasis-color-rgb), 0.8) !important;
+  font-family: "Ubuntu", sans-serif !important;
+  font-weight: 300 !important;
+}
+
+:root {
+  --primary-heading-font-size: calc(1rem + 4.49vw); /* display-1 in Bootstrap */
+  --link-btn-font-size: clamp(0.825rem, 1.482vw, 2rem) !important;
+  --icon-height: clamp(20px, 2.386vw, 66px);
+  --icon-div-px: calc(((var(--icon-height) * 1.5) - var(--icon-height)) / 2);
+}
+
+.primary-heading {
+  font-weight: 500 !important;
+  line-height: 1.2;
+  font-size: var(--primary-heading-font-size);
+}
+
+.mb-heading-vh {
+  margin-bottom: 8vh;
+}
+
+.secondary-heading {
+  font-weight: 400 !important;
+  line-height: 1.2;
+  font-size: calc(var(--primary-heading-font-size) / 2);
+}
+
+.link-btn {
+  line-height: 1.75 !important;
+  font-size: var(--link-btn-font-size) !important;
+}
+
+.link-btn:hover {
+  transition: 0.2s !important;
+  scale: 1.1 !important;
+}
+
+.body-root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(98vh - 60px);
+}
+
+.body-text {
+  font-size: clamp(0.7rem, 1.4vw, 2.4rem);
+}
+
+.fit-content {
+  width: fit-content !important;
+}
+
+.icon {
+  height: var(--icon-height);
+  transition: 1s;
+}
+
+.sq-icon {
+  height: var(--icon-height);
+  width: var(--icon-height);
+  transition: 1s;
+}
+
+.lg-sq-icon {
+  height: calc(clamp(60px, calc(2.386vw * 5.5), calc(66px * 5.5)));
+  width: calc(clamp(60px, calc(2.386vw * 5.5), calc(66px * 5.5)));
+  margin-right: calc(clamp(10px, calc(2.386vw * 2), calc(66px * 2)));
+  margin-left: calc(clamp(10px, calc(2.386vw * 2), calc(66px * 2)));
+  margin-top: 7.5vh;
+  margin-bottom: 7.5vh;
+  min-width: 0.25vw;
+  transition: 1s;
+}
+
+.icon-div {
+  height: calc(var(--icon-height) * 1.25) !important;
+  width: fit-content !important;
+  padding-left: var(--icon-div-px);
+  padding-right: var(--icon-div-px);
+  border: none !important;
+}
+
+.align-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Bootstrap xs breakpoint */
+@media (max-width: 575px) {
+  :root {
+    --primary-heading-font-size: calc(
+      1.525rem + 3.3vw
+    ); /* display-3 in Bootstrap */
+  }
+}
+
+/* Bootstrap md breakpoint */
+@media (min-width: 768px) and (max-width: 991px) {
+  :root {
+    --primary-heading-font-size: calc(
+      1.425rem + 2.1vw
+    ); /* display-5 in Bootstrap */
+  }
+}
+
+/* Bootstrap lg breakpoint */
+@media (min-width: 992px) and (max-width: 1199px) {
+  :root {
+    --primary-heading-font-size: calc(
+      1.475rem + 2.7vw
+    ); /* display-4 in Bootstrap */
+  }
+}
+
+/* Bootstrap xl breakpoint */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  :root {
+    --primary-heading-font-size: calc(
+      1.525rem + 3.3vw
+    ); /* display-3 in Bootstrap */
+  }
+}
+
+/* Bootstrap xxl breakpoint and beyond */
+@media (min-width: 1400px) {
+  .mx-xxl-2-5 {
+    margin-right: 0.75rem !important;
+    margin-left: 0.75rem !important;
+  }
+
+  .mr-xxl-2-5 {
+    margin-right: 0.75rem !important;
+  }
+}

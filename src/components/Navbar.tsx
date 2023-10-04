@@ -1,7 +1,9 @@
-import "../app.css";
-import "../navbar.css";
+import "../styles/app.css";
+import "../styles/navbar.css";
 import { Page } from "../App.tsx";
 import { pages } from "../App.tsx";
+import Logo from "./logos/Logo.tsx";
+import { useEffect } from "react";
 
 interface Props {
   lightMode: "light" | "dark";
@@ -11,6 +13,10 @@ interface Props {
 }
 
 function Navbar({ lightMode, flipLights, currentPage, setPage }: Props) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
+
   return (
     <nav
       className={
@@ -20,11 +26,7 @@ function Navbar({ lightMode, flipLights, currentPage, setPage }: Props) {
       }
     >
       <div className="container-fluid">
-        <img
-          className="navbar-brand"
-          src="vite.svg"
-          onClick={() => setPage("Home")}
-        />
+        <Logo lightMode={lightMode} setPage={setPage} />
         <button
           className="navbar-toggler ms-auto"
           type="button"
@@ -52,7 +54,12 @@ function Navbar({ lightMode, flipLights, currentPage, setPage }: Props) {
                     className={
                       currentPage === page ? "nav-link active" : "nav-link"
                     }
-                    onClick={() => setPage(page)}
+                    onClick={() => {
+                      setPage(page);
+                      document
+                        .getElementById("navbarSupportedContent")
+                        ?.classList.remove("show");
+                    }}
                   >
                     {page}
                   </a>

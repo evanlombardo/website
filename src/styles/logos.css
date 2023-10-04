@@ -1,0 +1,163 @@
+.icon-path {
+  transition: 1s !important;
+}
+
+#react:hover > path {
+  fill: #00d8ff !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#ts:hover > path {
+  fill: #3078c6 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#css:hover > #left {
+  fill: #0277bd !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#css:hover > #right {
+  fill: #039be5 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#java:hover > #top {
+  fill: #4e7896 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#java:hover > #bottom {
+  fill: #f58219 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#junit:hover > #left {
+  fill: #dc524a !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#junit:hover > #right {
+  fill: #25a162 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#html:hover > #left {
+  fill: #e65100 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#html:hover > #right {
+  fill: #ff6d00 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#youtube:hover > a > svg > path {
+  fill: #ff0000 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#python:hover > #top {
+  fill: #4685b7 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#python:hover > #bottom {
+  fill: #ffd43b !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#flask:hover > #main {
+  fill: #45aec2 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#flask:hover > #horn {
+  fill: #ffffff !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#flask:hover > #shadow {
+  fill: #1b6d74 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#mqtt:hover > path {
+  fill: #660066 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#rust:hover > path {
+  fill: #734129 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#can:hover > path {
+  fill: #00754b !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#spring:hover > path {
+  fill: #6db33f !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#eqube:hover > #swirl {
+  fill: #2e3191 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#eqube:hover > #slash {
+  fill: #d0d2d3 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#eqube:hover > #tilde {
+  fill: #ec1d23 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#aws:hover > #smile {
+  fill: #ff9900 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#gitlab:hover > #top {
+  fill: #e24329 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#gitlab:hover > #middle {
+  fill: #fc6d26 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#gitlab:hover > #bottom {
+  fill: #fca327 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#kubernetes:hover > path {
+  fill: #326de6 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#cucumber:hover > path {
+  fill: #23d96c !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#cpp:hover > #top {
+  fill: #0086d4 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#cpp:hover > #middle {
+  fill: #0275c0 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#cpp:hover > #bottom {
+  fill: #00549d !important;
+  transition: 0.3s ease-in-out !important;
+}

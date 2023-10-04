@@ -1,0 +1,7 @@
+.sub-text {
+  color: rgba(var(--bs-emphasis-color-rgb), 0.4) !important;
+}
+
+.date-align {
+  text-align: right !important;
+}

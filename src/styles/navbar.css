@@ -5,3 +5,7 @@
 .btn-no-outline {
   border: none !important;
 }
+
+.image-fade {
+  transition: 1s;
+}
