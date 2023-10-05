@@ -34,7 +34,7 @@ function Projects({ lightMode }: Props) {
       description: [
         "Programming IoT multi-tool to simplify and consolidate smart home features",
         "Designed with reusable, extendable modules and a module-generation tool",
-        "Uses React TypeScript JSX frontend with Spring Boot backend",
+        "Uses React TypeScript JSX frontend with Spring Boot backend and MongoDB",
       ],
       footing: (
         <>
@@ -91,7 +91,7 @@ function Projects({ lightMode }: Props) {
       heading: "Portfolio Website",
       subheading: "Sept. 2023 - Oct. 2023",
       description: [
-        "Developed professional website from scratch with React TypeScript JSX",
+        "Developed professional website from scratch with React TypeScript JSX, hosted on Firebase",
         "Stylized using custom CSS classes combined with Bootstrap",
         "Designed with reusability, extendability, and customizability in mind",
       ],
