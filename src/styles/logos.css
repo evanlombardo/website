@@ -52,6 +52,16 @@
   transition: 0.3s ease-in-out !important;
 }
 
+#angular:hover > #left {
+  fill: #dd0031 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#angular:hover > #right {
+  fill: #c3002f !important;
+  transition: 0.3s ease-in-out !important;
+}
+
 #youtube:hover > a > svg > path {
   fill: #ff0000 !important;
   transition: 0.3s ease-in-out !important;
@@ -159,6 +169,51 @@
 
 #cpp:hover > #bottom {
   fill: #00549d !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#csharp:hover > #top {
+  fill: #953dac !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#csharp:hover > #middle {
+  fill: #822c98 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#csharp:hover > #bottom {
+  fill: #68217a !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#c:hover > #top {
+  fill: #649ad2 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#c:hover > #middle {
+  fill: #00589c !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#c:hover > #bottom {
+  fill: #004482 !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#renode:hover > path {
+  fill: #007ded !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#docker:hover > path {
+  fill: #1d63ed !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+#dotnet:hover > path {
+  fill: #512bd4 !important;
   transition: 0.3s ease-in-out !important;
 }
 

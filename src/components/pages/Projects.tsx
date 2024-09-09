@@ -15,6 +15,10 @@ import MqttLogo from "../logos/MqttLogo";
 import RustLogo from "../logos/RustLogo";
 import CanLogo from "../logos/CanLogo";
 import SpringLogo from "../logos/SpringLogo";
+import CsharpLogo from "../logos/CsharpLogo";
+import RenodeLogo from "../logos/RenodeLogo";
+import DockerLogo from "../logos/Docker";
+import AngularLogo from "../logos/AngularLogo";
 
 interface Props {
   lightMode: "light" | "dark";
@@ -29,12 +33,12 @@ function Projects({ lightMode }: Props) {
     footing?: JSX.Element;
   }[] = [
     {
-      heading: "BigHouse",
-      subheading: "Aug. 2023 - Current",
+      heading: "Morpheus",
+      subheading: "Aug. 2024 - Current",
       description: [
-        "Programming IoT multi-tool to simplify and consolidate smart home features",
-        "Designed with reusable, extendable modules and a module-generation tool",
-        "Uses React TypeScript JSX frontend with Spring Boot backend and MongoDB",
+        "Leading a team of developers for Northeastern Electric Racing",
+        "Emulating hardware components in C# to test custom RTOS code",
+        "Performing integration tests across emulated hardware",
       ],
       footing: (
         <>
@@ -43,16 +47,43 @@ function Projects({ lightMode }: Props) {
             style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
           >
             <div className="col-auto g-0 p-0 me-1 me-lg-2 mr-xxl-2-5">
-              <JavaLogo lightMode={lightMode} />
+              <CsharpLogo lightMode={lightMode} />
+            </div>
+            <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
+              <RenodeLogo lightMode={lightMode} />
+            </div>
+            <div className="col-auto g-0 mx-1 mx-lg-2 mx-xxl-2-5 p-0">
+              <DockerLogo lightMode={lightMode} />
+            </div>
+          </div>
+        </>
+      ),
+    },
+    {
+      heading: "BigHouse",
+      subheading: "July 2024 - Current",
+      description: [
+        "Programming IoT multi-tool to simplify and consolidate smart home features",
+        "Designed with extendable modules and a module-generation tool",
+        "C# backend with Angular TypeScript frontend",
+      ],
+      footing: (
+        <>
+          <div
+            className="col my-0 justify-content-end align-items-center"
+            style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
+          >
+            <div className="col-auto g-0 p-0 me-1 me-lg-2 mr-xxl-2-5">
+              <CsharpLogo lightMode={lightMode} />
             </div>
             <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
               <TypeScriptLogo lightMode={lightMode} />
             </div>
             <div className="col-auto g-0 mx-1 mx-lg-2 mx-xxl-2-5 p-0">
-              <SpringLogo lightMode={lightMode} />
+              <AngularLogo lightMode={lightMode} />
             </div>
             <div className="col-auto g-0 mx-1 mx-lg-2 mx-xxl-2-5 p-0">
-              <ReactLogo lightMode={lightMode} />
+              <HtmlLogo lightMode={lightMode} />
             </div>
           </div>
         </>
@@ -60,7 +91,7 @@ function Projects({ lightMode }: Props) {
     },
     {
       heading: "Odyssey",
-      subheading: "Aug. 2023 - Current",
+      subheading: "Aug. 2023 - Jan. 2024",
       description: [
         "Lead team of 6 developers for Northeastern University Electric Racing",
         "Developing and integrating custom MQTT server and Rust application to decode and send CAN data from our house-made formula electric car",

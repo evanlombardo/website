@@ -1,6 +1,6 @@
 import "../../styles/home.css";
-import CppLogo from "../logos/CppLogo";
-import CssLogo from "../logos/CssLogo";
+import CLogo from "../logos/CLogo";
+import CsharpLogo from "../logos/CsharpLogo";
 import HtmlLogo from "../logos/HtmlLogo";
 import JavaLogo from "../logos/JavaLogo";
 import PythonLogo from "../logos/PythonLogo";
@@ -27,11 +27,14 @@ function Skills({ lightMode }: Props) {
           className="col my-0 justify-content-center align-items-center"
           style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
         >
+          <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
+            <CsharpLogo lightMode={lightMode} lg="lg-" />
+          </div>
           <div className="col-auto g-0 p-0 me-1 me-lg-2 mr-xxl-2-5">
             <JavaLogo lightMode={lightMode} lg="lg-" />
           </div>
           <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
-            <CppLogo lightMode={lightMode} lg="lg-" />
+            <CLogo lightMode={lightMode} lg="lg-" />
           </div>
           <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
             <PythonLogo lightMode={lightMode} lg="lg-" />
@@ -41,9 +44,6 @@ function Skills({ lightMode }: Props) {
           </div>
           <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
             <HtmlLogo lightMode={lightMode} lg="lg-" />
-          </div>
-          <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
-            <CssLogo lightMode={lightMode} lg="lg-" />
           </div>
         </div>
       </div>

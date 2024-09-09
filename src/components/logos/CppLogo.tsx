@@ -14,6 +14,7 @@ function CppLogo({ lightMode, lg }: Props) {
       className={lg ? lg + "sq-icon" : "sq-icon"}
       viewBox="0 0 144 144"
     >
+      <title>C/C++</title>
       <path
         id="top"
         className="icon-path"
