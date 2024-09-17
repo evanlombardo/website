@@ -14,7 +14,6 @@ import FlaskLogo from "../logos/FlaskLogo";
 import MqttLogo from "../logos/MqttLogo";
 import RustLogo from "../logos/RustLogo";
 import CanLogo from "../logos/CanLogo";
-import SpringLogo from "../logos/SpringLogo";
 import CsharpLogo from "../logos/CsharpLogo";
 import RenodeLogo from "../logos/RenodeLogo";
 import DockerLogo from "../logos/Docker";
