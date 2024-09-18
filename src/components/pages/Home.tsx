@@ -54,12 +54,11 @@ function Home({ lightMode }: Props) {
             <img src="me.jpeg" className="float-md-start my-face" />
             <h1 className="my-2 primary-heading">I'm Evan Lombardo</h1>
             <p className="text-start body-text">
-              I lead a software team at Northeastern University Electric Racing, where we are developing innovative tools for our custom
-              electric Formula car, including emulating hardware components for integrated testing using Renode and designing MQTT telemetry
-              systems. My most recent internship at Massa Products Corporation involved creating multithreaded socket servers and refining
-              firmware and UI/UX designs for sensor-based applications. Previously, at Lockheed Martin, I contributed to software projects
-              using Kubernetes, AWS, and Spring, focusing on secure integration and high-level APIs. I thrive on solving complex problems
-              and look forward to bringing my skills to a cutting-edge tech company.
+            I lead a team of developers at Northeastern University Electric Racing, where we engineer innovative software for our custom electric Formula car, 
+            including the use of Renode to emulate hardware components and designing MQTT telemetry systems. My most recent internship at Massa Products 
+            Corporation involved creating multithreaded socket servers and refining firmware and UI/UX designs for sensor-based applications. Previously, 
+            as a Lockheed Martin intern, I contributed to software projects using Kubernetes, AWS, and Spring, focusing on secure integration and high-level 
+            APIs. I thrive on solving complex problems and look forward to bringing my skills to a cutting-edge tech company.
             </p>
           </div>
         </div>
