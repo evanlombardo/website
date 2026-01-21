@@ -54,11 +54,7 @@ function Home({ lightMode }: Props) {
             <img src="me.jpeg" className="float-md-start my-face" />
             <h1 className="my-2 primary-heading">I'm Evan Lombardo</h1>
             <p className="text-start body-text">
-            I lead a team of developers at Northeastern University Electric Racing, where we engineer innovative software for our custom electric Formula car, 
-            including the use of Renode to emulate hardware components and designing MQTT telemetry systems. My most recent internship at Massa Products 
-            Corporation involved creating multithreaded socket servers and refining firmware and UI/UX designs for sensor-based applications. Previously, 
-            as a Lockheed Martin intern, I contributed to software projects using Kubernetes, AWS, and Spring, focusing on secure integration and high-level 
-            APIs. I thrive on solving complex problems and look forward to bringing my skills to a cutting-edge tech company.
+            I'm a software engineer studying at Northeastern University. Most recently at Matterworks, I built ETL pipelines processing 20+ million records and accelerated training data ingestion by 96x. At Massa Products, I developed multi-threaded systems for real-time sensor data and implemented TLS encryption for commercial deployments. My earlier internships at Lockheed Martin involved building access provisioning systems with enterprise SSO and automating complex data workflows. I've also led software teams at Northeastern Electric Racing, building telemetry and firmware for our club's electric F1 car. Outside of work, I enjoy skiing, rock climbing, and beach volleyball.
             </p>
           </div>
         </div>

@@ -28,19 +28,19 @@ function Skills({ lightMode }: Props) {
           style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
         >
           <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
+            <PythonLogo lightMode={lightMode} lg="lg-" />
+          </div>
+          <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
             <CsharpLogo lightMode={lightMode} lg="lg-" />
+          </div>
+          <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
+            <TypeScriptLogo lightMode={lightMode} lg="lg-" />
           </div>
           <div className="col-auto g-0 p-0 me-1 me-lg-2 mr-xxl-2-5">
             <JavaLogo lightMode={lightMode} lg="lg-" />
           </div>
           <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
             <CLogo lightMode={lightMode} lg="lg-" />
-          </div>
-          <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
-            <PythonLogo lightMode={lightMode} lg="lg-" />
-          </div>
-          <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
-            <TypeScriptLogo lightMode={lightMode} lg="lg-" />
           </div>
           <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
             <HtmlLogo lightMode={lightMode} lg="lg-" />

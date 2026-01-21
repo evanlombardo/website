@@ -9,6 +9,8 @@ import EQubeLogo from "../logos/EQubeLogo";
 import GitLabLogo from "../logos/GitLabLogo";
 import JavaLogo from "../logos/JavaLogo";
 import KubernetesLogo from "../logos/KubernetesLogo";
+import PythonLogo from "../logos/PythonLogo";
+import ReactLogo from "../logos/ReactLogo";
 import SpringLogo from "../logos/SpringLogo";
 
 interface Props {
@@ -24,14 +26,44 @@ function Experience({ lightMode }: Props) {
     footing?: JSX.Element;
   }[] = [
     {
+      heading: "Matterworks",
+      headingDescription: "Software Engineer Co-Op",
+      subheading: "Jan. 2025 - Dec. 2025",
+      description: [
+        "Accelerated training data ingestion by 96x, drastically shortening model development cycles",
+        "Achieved 5x API response speed increases by optimizing SQL queries and tables",
+        "Planned and executed large-scale project spanning 4 codebases, replacing error-prone manual workflows and enabling new AI model types on the platform",
+        "Built 3 ETL pipelines in AWS Glue processing 20+ million records, handling database migration, metadata ingestion, and data validation with 90% anomaly detection",
+        "Automated 5 recurring workflows (data uploads, quality checks, training prep), reducing longest process from 2 weeks manual effort to under 1 hour",
+      ],
+      footing: (
+        <>
+          <div
+            className="col my-0 justify-content-end align-items-center"
+            style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
+          >
+            <div className="col-auto g-0 p-0 me-1 me-lg-2 mr-xxl-2-5">
+              <PythonLogo lightMode={lightMode} />
+            </div>
+            <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
+              <ReactLogo lightMode={lightMode} />
+            </div>
+            <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
+              <AwsLogo lightMode={lightMode} />
+            </div>
+          </div>
+        </>
+      )
+    },
+    {
       heading: "Massa Products Corporation",
-      headingDescription:
-        "Firmware & Software Engineer, Engineering Department",
+      headingDescription: "Software & Firmware Engineer Co-Op",
       subheading: "Jan. 2024 - June 2024",
       description: [
-        "Developed an asynchronous callback Socket server in C#",
-        "Created a C# application to perform frequency response analysis using PicoScopes",
-        "Made firmware refinements in C and improved UI/UX for WinForms apps",
+        "Built multi-threaded socket server to collect data from 20+ ultrasonic sensors simultaneously, enabling real-time readings versus 1-minute delays with previous system",
+        "Developed internal PicoScope application for frequency response analysis, accelerating PCB testing and iteration cycles by an estimated 10%",
+        "Implemented TLS encryption for commercial ultrasonic sensor communications, enabling deployment to security-conscious clients",
+        "Redesigned sensor monitoring application UI, improving navigation, adding large-screen support, and resolving critical usability issues",
       ],
       footing: (
         <>
@@ -46,21 +78,20 @@ function Experience({ lightMode }: Props) {
               <CLogo lightMode={lightMode} />
             </div>
             <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
-            </div>
               <DotnetLogo lightMode={lightMode} />
+            </div>
           </div>
         </>
       ),
     },
     {
       heading: "Lockheed Martin",
-      headingDescription:
-        "College Student Tech, Enterprise Operations, MBx and EIS Teams",
+      headingDescription: "Software Engineer Intern, Enterprise Operations, MBx and EIS Teams",
       subheading: "May 2023 - Aug. 2023",
       description: [
-        "Supported and programmed for two high-stakes software development teams",
-        "Designed and implemented a Java Spring web server from scratch, integrated with AWS tools",
-        "Developed high-level APIs in eQube, a cutting-edge connection integration software",
+        "Built Java Spring access-provisioning system with enterprise SSO integration and self-signed certificates, enabling secure onboarding for data platform with 100+ users",
+        "Developed 50+ automations in eQube connecting internal databases and external vendors, replacing manual data workflows",
+        "Executed Alembic migrations on millions of transaction records, coordinating late-night rollouts to minimize disruption to widely-used operations platform",
       ],
       footing: (
         <>
@@ -86,13 +117,11 @@ function Experience({ lightMode }: Props) {
     },
     {
       heading: "Lockheed Martin",
-      headingDescription:
-        "High School Student Tech, Enterprise Operations, MBSE SWF Tiger Team",
+      headingDescription: "Software Engineer Intern, Enterprise Operations, MBSE SWF Tiger Team",
       subheading: "June 2022 - Aug. 2022",
       description: [
-        "Integrated reverse-proxy Ingress security into Kubernetes/Docker applications",
-        "Extended OSLC reference implementation to work with Cameo, GitLab and added capabilities",
-        "Developed and integrated Cucumber test scripts with GitLab Pipelines",
+        "Led development of Apache Camel proof-of-concept with API integration and Cucumber testing, demoing to 500+ staff at internal conference",
+        "Integrated reverse-proxy Ingress with SSO authentication into Kubernetes/Docker applications, enabling secure internal routing",
       ],
       footing: (
         <>

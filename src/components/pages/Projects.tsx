@@ -32,8 +32,37 @@ function Projects({ lightMode }: Props) {
     footing?: JSX.Element;
   }[] = [
     {
+      heading: "BigHouse",
+      subheading: "Aug. 2025 - Present",
+      description: [
+        "Building IoT smart home platform with C# backend and Angular frontend, supporting RTSP streaming, smart light control, and device automation",
+        "Designed plugin architecture with module-generation tooling for extensibility",
+      ],
+      footing: (
+        <>
+          <div
+            className="col my-0 justify-content-end align-items-center"
+            style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
+          >
+            <div className="col-auto g-0 p-0 me-1 me-lg-2 mr-xxl-2-5">
+              <CsharpLogo lightMode={lightMode} />
+            </div>
+            <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
+              <TypeScriptLogo lightMode={lightMode} />
+            </div>
+            <div className="col-auto g-0 mx-1 mx-lg-2 mx-xxl-2-5 p-0">
+              <AngularLogo lightMode={lightMode} />
+            </div>
+            <div className="col-auto g-0 mx-1 mx-lg-2 mx-xxl-2-5 p-0">
+              <HtmlLogo lightMode={lightMode} />
+            </div>
+          </div>
+        </>
+      ),
+    },
+    {
       heading: "Morpheus",
-      subheading: "Aug. 2024 - Current",
+      subheading: "Aug. 2024 - Dec. 2024",
       description: [
         "Leading a team of developers for Northeastern Electric Racing",
         "Emulating hardware components in C# to test custom RTOS code",
@@ -53,36 +82,6 @@ function Projects({ lightMode }: Props) {
             </div>
             <div className="col-auto g-0 mx-1 mx-lg-2 mx-xxl-2-5 p-0">
               <DockerLogo lightMode={lightMode} />
-            </div>
-          </div>
-        </>
-      ),
-    },
-    {
-      heading: "BigHouse",
-      subheading: "July 2024 - Current",
-      description: [
-        "Programming IoT multi-tool to simplify and consolidate smart home features",
-        "Designed with extendable modules and a module-generation tool",
-        "C# backend with Angular TypeScript frontend",
-      ],
-      footing: (
-        <>
-          <div
-            className="col my-0 justify-content-end align-items-center"
-            style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
-          >
-            <div className="col-auto g-0 p-0 me-1 me-lg-2 mr-xxl-2-5">
-              <CsharpLogo lightMode={lightMode} />
-            </div>
-            <div className="col-auto g-0 p-0 mx-1 mx-lg-2 mx-xxl-2-5">
-              <TypeScriptLogo lightMode={lightMode} />
-            </div>
-            <div className="col-auto g-0 mx-1 mx-lg-2 mx-xxl-2-5 p-0">
-              <AngularLogo lightMode={lightMode} />
-            </div>
-            <div className="col-auto g-0 mx-1 mx-lg-2 mx-xxl-2-5 p-0">
-              <HtmlLogo lightMode={lightMode} />
             </div>
           </div>
         </>
